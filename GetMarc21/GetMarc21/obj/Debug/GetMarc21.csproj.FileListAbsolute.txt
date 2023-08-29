@@ -9,3 +9,14 @@ E:\STUDY\WINFORM\GetMarc21\GetMarc21\obj\Debug\GetMarc21.csproj.GenerateResource
 E:\STUDY\WINFORM\GetMarc21\GetMarc21\obj\Debug\GetMarc21.csproj.CoreCompileInputs.cache
 E:\STUDY\WINFORM\GetMarc21\GetMarc21\obj\Debug\GetMarc21.exe
 E:\STUDY\WINFORM\GetMarc21\GetMarc21\obj\Debug\GetMarc21.pdb
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\bin\Debug\GetMarc21.exe.config
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\bin\Debug\GetMarc21.exe
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\bin\Debug\GetMarc21.pdb
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.csproj.AssemblyReference.cache
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.csproj.SuggestedBindingRedirects.cache
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.Form1.resources
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.Properties.Resources.resources
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.csproj.GenerateResource.cache
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.csproj.CoreCompileInputs.cache
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.exe
+E:\STUDY\WINFORM\GetMarc21ValueFromText\GetMarc21\GetMarc21\obj\Debug\GetMarc21.pdb

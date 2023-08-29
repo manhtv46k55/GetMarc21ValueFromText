@@ -54,5 +54,79 @@ namespace GetMarc21
 
             return values;
         }
+
+        private void btnSort_Click(object sender, EventArgs e)
+        {
+            List<string> input = new List<string>()
+        {
+            "$aHoàng Mạnh",
+            "$aVăn Mạnh",
+            "$aMinh Quang",
+            "$eTác giả",
+            "$e Chủ biên",
+            "$hKKK",
+            "$gôpd"
+        };
+            string strResult = "";
+            List<string> output = GetFormattedLines(input);
+
+            for (int i = 0; i < output.Count; i++)
+            {
+                strResult += output[i] + "\n";
+            }
+            rtbResult2.Text = strResult;
+        }
+
+        public static List<string> GetFormattedLines(List<string> input)
+        {
+            List<string> lines = new List<string>();
+
+            Dictionary<char, string> keyValues = new Dictionary<char, string>()
+        {
+            {'a', ""},
+            {'e', ""},
+            {'h', ""},
+            {'g', ""}
+        };
+
+            foreach (string fragment in input)
+            {
+                if (fragment.Length >= 2 && fragment[0] == '$')
+                {
+                    char key = fragment[1];
+                    string value = fragment.Substring(2);
+
+                    if (keyValues.ContainsKey(key))
+                    {
+                        keyValues[key] += value;
+                    }
+                    else
+                    {
+                        keyValues.Add(key, value);
+                    }
+                }
+            }
+
+            var sortedKeyValues = keyValues.OrderBy(kv => kv.Key);
+
+            string line = "";
+            foreach (KeyValuePair<char, string> pair in sortedKeyValues)
+            {
+                string fragment = $"${pair.Key}{pair.Value}";
+                line += fragment + " ";
+            }
+
+            lines.Add(line.Trim());
+
+            foreach (string fragment in input)
+            {
+                if (fragment.Length >= 1 && fragment[0] == '$' && !keyValues.ContainsKey(fragment[1]))
+                {
+                    lines.Add(fragment);
+                }
+            }
+
+            return lines;
+        }
     }
 }
